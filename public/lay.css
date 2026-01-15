@@ -1,0 +1,28 @@
+/*
+    Project: Canvas Express V1
+    Last Modified: 2025-10-17
+    Author: Maxim (www.maxim.pe.kr)
+ */
+
+:root {
+    --canvas-rgb: 250, 150, 200;
+
+    /* Custom colors for heartEffect */
+    --heart-color-1: rgba(255, 182, 193, 0.7);
+    --heart-color-2: rgba(255, 192, 203, 0.7);
+    --heart-color-3: rgba(255, 228, 225, 0.7);
+    --heart-color-4: rgba(238, 130, 238, 0.7);
+}
+
+.logo-title {
+    font-family: 'Fredoka One', cursive;
+    font-weight: normal;
+    text-shadow: 0 0 20px var(--accent-color);
+    color: var(--text-color);
+}
+
+.logo-subtitle {
+    margin-left: 1px;
+    letter-spacing: 1px;
+}
+
