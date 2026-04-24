@@ -1,28 +1,103 @@
-/*
-    Project: Canvas Express V1
-    Last Modified: 2025-10-17
-    Author: Maxim (www.maxim.pe.kr)
- */
 
 :root {
-    --canvas-rgb: 250, 150, 200;
+    --damso-bg-button: #ffb7b2;
+    --damso-bg-button-hover: #c08a86;
 
-    /* Custom colors for heartEffect */
+    --damso-color-primary: #ffb6c1;
+    --damso-color-primary-rgb: 255, 182, 193;
+    --damso-overlay-dot: rgba(255, 182, 193, 0.1);
+
+    --text-color: #ffffff;
+    --accent-color: #ffc0cb;
+    --accent-color-rgb: 255, 192, 203;
+
+    /* Heart Effect Colors */
     --heart-color-1: rgba(255, 182, 193, 0.7);
     --heart-color-2: rgba(255, 192, 203, 0.7);
     --heart-color-3: rgba(255, 228, 225, 0.7);
     --heart-color-4: rgba(238, 130, 238, 0.7);
 }
 
-.logo-title {
-    font-family: 'Fredoka One', cursive;
+.damso-header {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.damso-header__brand {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+    animation: brandingFadeIn 1.5s ease-out;
+}
+
+@keyframes brandingFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.brand-logo {
     font-weight: normal;
-    text-shadow: 0 0 20px var(--accent-color);
+    font-size: clamp(3em, 2.5em + 5vw, 6em);
+    font-family: "Fredoka One", sans-serif;
+    margin: 0 0 0 -0.02em;
+    text-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
     color: var(--text-color);
+    line-height: 1;
+    letter-spacing: -0.02em;
 }
 
-.logo-subtitle {
-    margin-left: 1px;
-    letter-spacing: 1px;
+.brand-slogan {
+    font-family: "Kanit", sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    font-weight: 400;
+    margin: 0.8rem 0 0 0.1em;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: lowercase;
 }
 
+.damso-action-group__item {
+    background: rgba(255, 182, 193, 0.2);
+    border-color: rgba(255, 182, 193, 0.3);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.damso-action-group__item:hover {
+    background: rgba(255, 182, 193, 0.4);
+    border-color: rgba(255, 182, 193, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.damso-canvas__image,
+.damso-canvas__slide {
+    filter: brightness(0.4) blur(8px);
+}
+
+.damso-canvas__effect {
+    z-index: 5;
+}
+
+.damso-canvas__overlay {
+    z-index: 2;
+}
+
+/* Vinarang Custom: Youtube Button (Override Global Red to Deep Pink) */
+.damso-action-group__item[href*="youtube"] {
+    background-color: #f06292 !important; /* Deep Pastel Pink */
+    border-color: #f06292 !important;
+}
+
+.damso-action-group__item[href*="youtube"]:hover {
+    background-color: #e91e63 !important; /* Vivid Deep Pink */
+    border-color: #e91e63 !important;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+}
