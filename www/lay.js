@@ -18,7 +18,7 @@ const siteConfig = {
         image_path: './section/bg/',
         image_count: 5,
         image_slide: 7,
-        image_format: 'jpg',
+        image_format: 'webp',
         standalone: true
     },
     buttons: [
