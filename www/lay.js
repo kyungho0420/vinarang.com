@@ -85,7 +85,6 @@ const heartEffectPlugin = {
 
         this.updateColors();
         this.handleResize();
-        this.animate();
 
         window.addEventListener('resize', () => this.handleResize());
     },
@@ -119,14 +118,13 @@ const heartEffectPlugin = {
         }
     },
 
-    animate() {
+    draw() {
         if (!this.ctx) return;
         this.ctx.clearRect(0, 0, this.logicalWidth, this.logicalHeight);
         this.hearts.forEach(heart => {
             heart.update(this.logicalWidth, this.logicalHeight);
             heart.draw(this.ctx);
         });
-        requestAnimationFrame(() => this.animate());
     }
 };
 

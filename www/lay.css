@@ -77,11 +77,6 @@
 }
 
 
-.damso-canvas__image,
-.damso-canvas__slide {
-    filter: brightness(0.4) blur(8px);
-}
-
 .damso-canvas__effect {
     z-index: 5;
 }
