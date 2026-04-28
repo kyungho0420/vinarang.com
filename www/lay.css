@@ -8,8 +8,8 @@
     --damso-overlay-dot: rgba(var(--damso-color-primary-rgb), 0.1);
 
     --damso-color-text: #ffffff;
-    --damso-color-accent: #ffc0cb;
-    --damso-color-accent-rgb: 255, 192, 203;
+    --damso-color-accent: #ff8fab;
+    --damso-color-accent-rgb: 255, 120, 144;
 
     /* Heart Effect Colors */
     --heart-color-1: rgba(255, 182, 193, 0.7);
