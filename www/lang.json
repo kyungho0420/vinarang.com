@@ -1,8 +1,14 @@
 {
+    "_default": {
+        "home_title": "Vinarang",
+        "home_description": ""
+    },
     "en": {
-        "site_title": "Vinarang"
+        "meta_title": "Vinarang",
+        "meta_description": ""
     },
     "ko": {
-        "site_title": "비나랑"
+        "meta_title": "비나랑",
+        "meta_description": ""
     }
 }
