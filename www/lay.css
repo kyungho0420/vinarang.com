@@ -1,15 +1,15 @@
 
 :root {
-    --damso-bg-button: #ffb7b2;
-    --damso-bg-button-hover: #c08a86;
+    --damso-btn-color-bg: #ffb7b2;
+    --damso-btn-color-bg-hover: #c08a86;
 
     --damso-color-primary: #ffb6c1;
     --damso-color-primary-rgb: 255, 182, 193;
-    --damso-overlay-dot: rgba(255, 182, 193, 0.1);
+    --damso-overlay-dot: rgba(var(--damso-color-primary-rgb), 0.1);
 
-    --text-color: #ffffff;
-    --accent-color: #ffc0cb;
-    --accent-color-rgb: 255, 192, 203;
+    --damso-color-text: #ffffff;
+    --damso-color-accent: #ffc0cb;
+    --damso-color-accent-rgb: 255, 192, 203;
 
     /* Heart Effect Colors */
     --heart-color-1: rgba(255, 182, 193, 0.7);
@@ -35,8 +35,8 @@
     font-size: clamp(3em, 2.5em + 5vw, 6em);
     font-family: "Fredoka One", sans-serif;
     margin: 0 0 0 -0.02em;
-    text-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
-    color: var(--text-color);
+    text-shadow: 0 0 20px rgba(var(--damso-color-primary-rgb), 0.5);
+    color: var(--damso-color-text);
     line-height: 1;
     letter-spacing: -0.02em;
 }
@@ -52,18 +52,17 @@
 }
 
 .damso-action-group__item {
-    background: rgba(255, 182, 193, 0.2);
-    border-color: rgba(255, 182, 193, 0.3);
-    color: #ffffff;
+    background: rgba(var(--damso-color-primary-rgb), 0.2);
+    border-color: rgba(var(--damso-color-primary-rgb), 0.3);
+    color: var(--damso-white);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .damso-action-group__item:hover {
-    background: rgba(255, 182, 193, 0.4);
-    border-color: rgba(255, 182, 193, 0.5);
-    transform: translateY(-2px);
+    background: rgba(var(--damso-color-primary-rgb), 0.4);
+    border-color: rgba(var(--damso-color-primary-rgb), 0.5);
+    color: var(--damso-white);
 }
-
 
 .damso-canvas__effect {
     z-index: 5;

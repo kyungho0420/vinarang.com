@@ -1,14 +1,14 @@
 {
     "_default": {
-        "home_title": "Vinarang",
-        "home_description": ""
+        "home_title": "vinarang",
+        "home_description": "where is your happiness"
     },
     "en": {
         "meta_title": "Vinarang",
-        "meta_description": ""
+        "meta_description": "where is your happiness"
     },
     "ko": {
         "meta_title": "비나랑",
-        "meta_description": ""
+        "meta_description": "당신의 행복은 어디에 있나요"
     }
 }
