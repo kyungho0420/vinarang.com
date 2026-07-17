@@ -1,5 +1,5 @@
 /**
- * Project: VINARANG (EXPRESS V4)
+ * Project: VINARANG (EXPRESS V1)
  * Author: Damso Universe
  */
 
@@ -29,7 +29,7 @@ const siteConfig = {
 };
 
 /**
- * Heart Effect Plugin for V4
+ * Heart Effect Plugin for V1
  */
 const heartEffectPlugin = {
     init(wrapper) {
@@ -129,15 +129,15 @@ const heartEffectPlugin = {
 };
 
 /**
- * Initialize V4 Application
+ * Initialize V1 Application
  */
 window.addEventListener('DOMContentLoaded', async () => {
-    if (!window.V4) return;
+    if (!window.V1) return;
 
     // Register Effect
-    window.V4.Effects = window.V4.Effects || {};
-    window.V4.Effects.heartEffect = heartEffectPlugin;
+    window.V1.Effects = window.V1.Effects || {};
+    window.V1.Effects.digitalGlitch = digitalGlitchPlugin;
 
     // Initialize Engine
-    await window.V4.init(siteConfig);
+    await window.V1.init(siteConfig);
 });
