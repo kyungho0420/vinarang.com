@@ -136,7 +136,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     // Register Effect
     window.V1.Effects = window.V1.Effects || {};
-    window.V1.Effects.digitalGlitch = digitalGlitchPlugin;
+    window.V1.Effects.heartEffect = heartEffectPlugin;
 
     // Initialize Engine
     await window.V1.init(siteConfig);
