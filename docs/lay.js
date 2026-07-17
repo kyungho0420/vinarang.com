@@ -5,7 +5,7 @@
 
 const siteConfig = {
     meta: {
-        framework: 'V4',
+        framework: 'V1',
         type: 'screen',
         lang: 'ko',
         theme: false,
